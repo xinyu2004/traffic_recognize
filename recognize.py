@@ -18,7 +18,7 @@ if __name__ == '__main__':
     #Init all need data
     model_path = "./model_data/yolo.h5"
     anchors_path = "./model_data/yolo_anchors.txt"
-    classes_path = "./model_data/coco_classes.txt"
+    classes_path = "./model_data/traffic_classes.txt"
 
     if not os.path.exists(model_path):
         print('Init model failure, check data first!')
@@ -27,7 +27,7 @@ if __name__ == '__main__':
         print('Init anchors failure, check data first!')
 
     if not os.path.exists(classes_path):
-        print('Init cleasses failure, check data first!')
+        print('Init classes failure, check data first!')
 
     #prepare moive data
     if(len(sys.argv) < 2):
